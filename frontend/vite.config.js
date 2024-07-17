@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/NSS_CLUB/', // base should be the repository name
+  // base should be the repository name
 });
