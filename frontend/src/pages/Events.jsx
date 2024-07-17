@@ -4,7 +4,7 @@ const events = [
   { 
     id: 1, 
     description: 'NSS UNIT SNIST has administered over 1200+ vaccine doses.This achievement is a testament to the tireless efforts and commitment of our NSS volunteers in promoting public health and well-being. The successful implementation of this initiative is a step forward in ensuring a safer and healthier community. We will continue to work towards creating a better and healthier environment for everyone.', 
-    image: './public/events/Vaccination.jpg' 
+    image: './events/Vaccination.jpg' 
   },
   { 
     id: 2, 
@@ -12,7 +12,7 @@ const events = [
     time: '11:00 AM', 
     venue: 'Venue 2', 
     description: 'Every year, NSS Unit SNIST organises a cloth collection and donation drive to help the underprivileged. The cloth collection drive is not limited to the college premises; people from all over Hyderabad donate clothes to contribute to the well being of others.These clothes are then donated to the people who do not have these basic necessities.', 
-    image: './public/events/Cloth.jpg' 
+    image: './events/Cloth.jpg' 
   },
   { 
     id: 3, 
@@ -20,7 +20,7 @@ const events = [
     time: '12:00 PM', 
     venue: 'Venue 3', 
     description: 'We the NSS volunteers have actively engaged in various clean-up drives, including lake and hill clean-ups, demonstrating a strong commitment to environmental conservation. These initiatives not only help restore natural beauty but also promote awareness about the importance of maintaining clean and healthy surroundings. Through these efforts, we aim to inspire others to take part in preserving our environment for future generations.', 
-    image: './public/events/clearup.jpg' 
+    image: './events/clearup.jpg' 
   },
   { 
     id: 4, 
@@ -28,7 +28,7 @@ const events = [
     time: '1:00 PM', 
     venue: 'Venue 4', 
     description: 'We the team NSS Unit SNIST started celebrating our culture and tradition through Bathukamma festival. Bathukamma is a vibrant floral festival celebrated predominantly in Telangana, India, marking the beauty and cultural richness of the region. It involves women creating and worshipping flower stacks, symbolizing life and prosperity, culminating in grand communal celebrations. Our festivities highlighted unity and prosperity, allowing us to connect deeply with local traditions.', 
-    image: './public/events/food.jpg' 
+    image: './events/food.jpg' 
   },
   // Add more events as needed
 ];

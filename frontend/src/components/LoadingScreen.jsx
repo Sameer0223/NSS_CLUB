@@ -18,7 +18,7 @@ const LoadingScreen = ({ setLoading }) => {
     >
       <div className="loading-screen">
         <div className="logo-container">
-          <img src="/nss.jpg" alt="NSS SNIST Logo" className="logo" />
+          <img src="./events/nss.jpg" alt="NSS SNIST Logo" className="logo" />
           <p className="logo-text">NSS SNIST</p>
         </div>
         <p className="loading-text">Loading...</p>

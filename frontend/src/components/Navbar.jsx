@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className="navbar flex justify-between items-center h-full">
             <div className="flex items-center">
               {/* Logo */}
-              <img src="./nss.jpg" alt="Logo" className="h-8 mr-2" /> {/* Adjust the image source and size as needed */}
+              <img src="./events/nss.jpg" alt="Logo" className="h-8 mr-2" /> {/* Adjust the image source and size as needed */}
               {/* End Logo */}
               <div className="dropdown mr-4">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

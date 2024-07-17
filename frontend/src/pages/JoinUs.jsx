@@ -10,7 +10,7 @@ const JoinUs = () => {
           <div className="bg-white rounded-lg shadow-md p-6 mb-8">
             <div className="flex flex-col md:flex-row items-center">
               <img 
-                src="/nss.jpg" 
+                src="./events/nss.jpg" 
                 alt="NSS Club" 
                 className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 md:mr-6"
               />

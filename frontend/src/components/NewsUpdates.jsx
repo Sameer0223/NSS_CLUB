@@ -8,21 +8,21 @@ const newsData = [
     title: 'Festive and Health Celebrations ',
     date: 'July 10, 2024',
     description: 'The NSS Unit recently organized a Holi celebration at an orphanage, bringing joy to the children with eco-friendly colors and fun activities. Additionally, Yoga Day celebrations promoted health and wellness through yoga sessions, emphasizing the benefits of regular yoga practice.',
-    image: './public/events/Bathukamma.jpg',
+    image: './events/Bathukamma.jpg',
     link: '#'
   },
   {
     title: 'Anti-Drug Awareness',
     date: 'July 15, 2024',
     description: 'In collaboration with the Rachakonda Police, the NSS Unit participated in an anti-drug awareness program, educating the community about the dangers of drug abuse and promoting a drug-free lifestyle.',
-    image: './public/events/drug.jpg',
+    image: './events/drug.jpg',
     link: '#'
   },
   {
     title: 'Agricultural Engagement',
     date: 'July 20, 2024',
     description: 'Details aboVolunteers have been partnering with local farms, assisting in planting, weeding, and harvesting crops. This activity promotes environmental awareness, teamwork, and provides fresh produce for the community.ut event 3. This can be a brief summary or highlight of the event.',
-    image: './public/events/agr.jpg',
+    image: './events/agr.jpg',
     link: '#'
   }
 ];
