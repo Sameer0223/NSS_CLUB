@@ -79,7 +79,7 @@ const AboutUs = () => {
           </div> */}
           <div className="flex justify-center mt-12">
             <img
-              src="./public/events/group.jpg"
+              src="./events/group.jpg"
               alt="Description of image"
               className="w-full max-w-4xl rounded-lg"
             />
