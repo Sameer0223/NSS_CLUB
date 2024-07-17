@@ -1,0 +1,56 @@
+/* Banner.css */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .scroll-transition, .scroll-transition-left {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .scroll-transition.active {
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .scroll-transition-left.active {
+    opacity: 1;
+    animation: fadeInLeft 1s forwards;
+  }
+  
+  .img-transition {
+    transition: transform 100ms ease-in-out;
+  }
+  
+  .img-transition:hover {
+    transform: scale(1.05);
+  }
+  /* Banner.css */
+
+.scroll-transition,
+.scroll-transition-left {
+  transition: all 1000ms ease-in-out;
+}
+
+.text-justify {
+  text-align: justify;
+}

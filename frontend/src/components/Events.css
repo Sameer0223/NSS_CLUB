@@ -1,0 +1,83 @@
+/* Events.css */
+
+.event-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem; /* Add margin between cards */
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-card:hover .event-image {
+    transform: scale(1.1);
+  }
+  
+  .event-card-content {
+    padding: 1rem;
+  }
+  
+  .event-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .event-card-details {
+    color: gray;
+    margin-bottom: 0.5rem; /* Add spacing between details */
+  }
+  
+  .event-card-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2563eb;
+  }
+  
+  .view-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more-button {
+    background-color: #10b981;
+  }
+  
+  .view-more-button:hover {
+    background-color: #059669;
+  }
+  
+  .view-less-button {
+    background-color: #ef4444;
+  }
+  
+  .view-less-button:hover {
+    background-color: #dc2626;
+  }
+  
