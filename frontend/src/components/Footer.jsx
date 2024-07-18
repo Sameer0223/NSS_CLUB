@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center">
-          <p className="text-sm text-gray-400">&copy; 2024 Your Company. All rights reserved.</p>
+          <p className="text-sm text-gray-400">&copy; 2024 NSS SNIST. All rights reserved.</p>
         </div>
       </div>
     </footer>
