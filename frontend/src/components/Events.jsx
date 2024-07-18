@@ -6,12 +6,12 @@ import './Events.css';
 
 const Events = () => {
   const [events] = useState([
-    { id: 1, date: '2024-07-02', time: '10:00 AM', venue: 'Venue 1', description: 'Vaccination Drive ', image: './public/events/Vaccination.jpg' },
-    { id: 2, date: '2024-07-03', time: '11:00 AM', venue: 'Venue 2', description: 'Cloth Collection & Donation', image: './public/events/Cloth.jpg' },
-    { id: 3, date: '2024-07-04', time: '12:00 PM', venue: 'Venue 3', description: 'Aarambh', image: './public/events/Arambh.jpg' },
-    { id: 4, date: '2024-07-05', time: '01:00 PM', venue: 'Venue 4', description: 'Aksharmaala', image: './public/events/Aksharmaala.jpg' },
-    { id: 5, date: '2024-07-06', time: '02:00 PM', venue: 'Venue 5', description: 'CleanUp Drives', image: './public/events/clearup-drive.jpg' },
-    { id: 6, date: '2024-07-07', time: '03:00 PM', venue: 'Venue 6', description: ' Bathukamma', image: './public/events/Bathukamma.jpg' },
+    { id: 1, date: '2024-07-02', time: '10:00 AM', venue: 'Venue 1', description: 'Vaccination Drive ', image: './events/Vaccination.jpg' },
+    { id: 2, date: '2024-07-03', time: '11:00 AM', venue: 'Venue 2', description: 'Cloth Collection & Donation', image: './events/Cloth.jpg' },
+    { id: 3, date: '2024-07-04', time: '12:00 PM', venue: 'Venue 3', description: 'Aarambh', image: './events/Arambh.jpg' },
+    { id: 4, date: '2024-07-05', time: '01:00 PM', venue: 'Venue 4', description: 'Aksharmaala', image: './events/Aksharmaala.jpg' },
+    { id: 5, date: '2024-07-06', time: '02:00 PM', venue: 'Venue 5', description: 'CleanUp Drives', image: './events/clearup-drive.jpg' },
+    { id: 6, date: '2024-07-07', time: '03:00 PM', venue: 'Venue 6', description: ' Bathukamma', image: './events/Bathukamma.jpg' },
   ]);
 
   const [visibleCount, setVisibleCount] = useState(3);
