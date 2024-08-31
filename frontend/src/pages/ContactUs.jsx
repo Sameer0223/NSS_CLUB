@@ -7,39 +7,39 @@ const ContactUs = () => {
     {
       name: 'Facebook',
       icon: 'fab fa-facebook-f',
-      link: 'https://www.facebook.com/yourclub',
+      link: 'https://www.facebook.com',
       color: '#3b5998',
     },
     {
       name: 'Twitter',
       icon: 'fab fa-twitter',
-      link: 'https://www.twitter.com/yourclub',
+      link: 'https://www.twitter.com',
       color: '#1DA1F2',
     },
     {
       name: 'Instagram',
       icon: 'fab fa-instagram',
-      link: 'https://www.instagram.com/yourclub',
+      link: 'https://www.instagram.com',
       color: '#E1306C',
     },
     {
       name: 'LinkedIn',
       icon: 'fab fa-linkedin-in',
-      link: 'https://www.linkedin.com/yourclub',
+      link: 'https://www.linkedin.com',
       color: '#0077b5',
     },
   ];
 
   const officials = [
     {
-      name: 'John Doe',
-      position: 'President',
-      email: 'john.doe@example.com',
+      name: 'D. Sathya Sai Priya',
+      position: 'Coordinator',
+      email: 'name@gmail.com',
     },
     {
-      name: 'Jane Smith',
-      position: 'Vice President',
-      email: 'jane.smith@example.com',
+      name: ' Chandra Prakash Reddy',
+      position: 'General Secretary',
+      email: 'name@gmail.com',
     },
   ];
 
