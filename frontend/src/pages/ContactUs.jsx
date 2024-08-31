@@ -1,8 +1,34 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Footer from '../components/Footer'; // Import your Footer component here
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
+import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_9idp3ca', // Replace with your EmailJS service ID
+        'template_gqbmoc3', // Replace with your EmailJS template ID
+        form.current,
+        'ki4B4zfnVyWiOn6EO' // Replace with your EmailJS public key
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          alert('Message sent successfully!');
+          form.current.reset(); // Reset form fields after submission
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          alert('Failed to send message. Please try again later.');
+        }
+      );
+  };
+
   const socialMediaLinks = [
     {
       name: 'Facebook',
@@ -37,7 +63,7 @@ const ContactUs = () => {
       email: 'name@gmail.com',
     },
     {
-      name: ' Chandra Prakash Reddy',
+      name: 'Chandra Prakash Reddy',
       position: 'General Secretary',
       email: 'name@gmail.com',
     },
@@ -57,7 +83,14 @@ const ContactUs = () => {
               </p>
               <div className="flex justify-center mb-8 space-x-4">
                 {socialMediaLinks.map((link, index) => (
-                  <a key={index} href={link.link} target="_blank" rel="noopener noreferrer" className="rounded-full p-3 hover:opacity-80 transition duration-300" style={{ backgroundColor: link.color }}>
+                  <a
+                    key={index}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full p-3 hover:opacity-80 transition duration-300"
+                    style={{ backgroundColor: link.color }}
+                  >
                     <i className={`${link.icon} text-white text-2xl`}></i>
                   </a>
                 ))}
@@ -74,20 +107,20 @@ const ContactUs = () => {
             {/* Right side */}
             <div className="md:w-1/2 md:pl-6">
               <h3 className="text-2xl font-semibold mb-4">Feedback Form</h3>
-              <form className="space-y-4">
+              <form ref={form} onSubmit={sendEmail} className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-gray-700">Name</label>
-                  <input type="text" id="name" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  <input type="text" name="user_name" id="name" required className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-gray-700">Email</label>
-                  <input type="email" id="email" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                  <input type="email" name="user_email" id="email" required className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-gray-700">Message</label>
-                  <textarea id="message" rows="4" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                  <textarea name="message" id="message" required rows="4" className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                 </div>
-                <button type="submit" className="w-full bg-blue-500 text-white rounded-lg p-4 hover:bg-blue-700 transition duration-300">Submit</button>
+                <button type="submit" className="w-full bg-blue-500 text-white rounded-lg p-4 hover:bg-blue-700 transition duration-300">Send</button>
               </form>
             </div>
           </div>
