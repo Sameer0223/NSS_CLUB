@@ -21,7 +21,7 @@ const JoinUs = () => {
                 </p>
                 
                 <a 
-                  href="https://www.example.com/register-NSS-club" 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe7RJfHjHBWN2gnDYFJaOU2XztO-aSifj84m9X1j20TTCHPZg/viewform?usp=sf_link" 
                   className="inline-block bg-blue-500 text-white text-center rounded-lg py-2 px-4 hover:bg-blue-700 transition duration-300 text-sm"
                 >
                   Register for NSS Club Membership
